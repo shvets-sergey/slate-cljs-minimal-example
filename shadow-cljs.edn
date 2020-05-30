@@ -1,0 +1,16 @@
+{:source-paths
+ ["src/main"]
+
+ :dependencies
+ []
+
+ :dev-http {3000 "public"}
+
+ :builds
+ {:app {:target :browser
+        :output-dir "public/assets/app/js"
+        :asset-path "/assets/app/js"
+        :modules {:main {:entries [slate-example.app]
+                         :init-fn slate-example.app/entry-point!}}
+        :compiler-options {:infer-externs auto}}
+   }}
