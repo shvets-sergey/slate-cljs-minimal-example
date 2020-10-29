@@ -12,5 +12,6 @@
         :asset-path "/assets/app/js"
         :modules {:main {:entries [slate-example.app]
                          :init-fn slate-example.app/entry-point!}}
-        :compiler-options {:infer-externs auto}}
+        :compiler-options {:infer-externs auto
+                           :output-feature-set :es6}}
    }}
